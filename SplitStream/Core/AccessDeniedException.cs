@@ -1,6 +1,6 @@
 using System;
 
-namespace MultiThreaded_downloader
+namespace SplitStream
 {
     public class AccessDeniedException : Exception
     {

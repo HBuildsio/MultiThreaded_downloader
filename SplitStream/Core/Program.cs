@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace MultiThreaded_downloader
+namespace SplitStream
 {
     class Program
     {
@@ -16,7 +16,7 @@ namespace MultiThreaded_downloader
             String[] disposablePaths = { @"C:\Download\temp1", @"C:\Download\temp2" , @"C:\Download\temp3" };
             String Destination = @"H:\Downloads";
             int threadCount = Environment.ProcessorCount;
-            var nd = new NewDownloader(nPath, Destination, threadCount);
+            var nd = new NewDownloader(path, Destination, threadCount);
             
             Console.WriteLine("Thread Count: " + threadCount);
             var elapsed = nd.DownloadFileAsync().Result;

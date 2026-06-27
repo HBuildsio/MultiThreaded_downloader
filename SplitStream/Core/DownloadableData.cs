@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Security;
 using System.IO;
 
-namespace MultiThreaded_downloader
+namespace SplitStream
 {
     struct DownloadableData
     {
